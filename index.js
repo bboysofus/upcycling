@@ -1,20 +1,29 @@
 let main = document.querySelector('main')
-let images = ['assets/1.jpg','assets/2.jpg','assets/3.jpg','assets/4.jpg']
+let h1 = document.querySelector('#title')
+
+let x = 1
 
 const changeImage = () => {
-    if(main.style.backgroundImage == "url(assets/1.jpg)"){
-        main.style.backgroundImage = "url(assets/2.jpg)"
+
+    if(x == 1){
+        main.style.backgroundImage = 'url("./assets/to.jpg")'
+        x = 2
     }
-    else if(main.style.backgroundImage == "url(assets/2.jpg)"){
-        main.style.backgroundImage = "url(assets/3.jpg)"
+    else if(x == 2){
+        main.style.backgroundImage = 'url("./assets/tre.jpg")'
+        x = 3   
     }
-    else if(main.style.backgroundImage == "url(assets/3.jpg)"){
-        main.style.backgroundImage = "url(assets/4.jpg)"
+    else if(x == 3){
+        main.style.backgroundImage = 'url("./assets/fire.jpg")'
+        x = 4
     }
-    else(main.style.backgroundImage = "url(assets/1.jpg)")
+    else if(x == 4){
+        main.style.backgroundImage = 'url("./assets/en.jpg")'
+        x = 1
+    }
 }
 
-setInterval(changeImage, 1000)
+setInterval(changeImage, 5000)
 
 // setInterval(function(){
 //     change()
