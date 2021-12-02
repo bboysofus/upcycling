@@ -6,8 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="produkter.css">
     <title>Produkter</title>
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
 </head>
 <body>
-    
+    <main>
+        <img src="./assets/teewhite1show.png" id="popUp1">
+        <img src="./assets/teewhite2show.png" id="popUp2">
+        <img src="./assets/teewhite3show.png" id="popUp3">
+        <img src="./assets/teeblack1show.png" id="popUp4">
+        <img src="./assets/teeblack2show.png" id="popUp5">
+        <img src="./assets/teeblack3show.png" id="popUp6">
+
+        <img src="./assets/hoodiewhitefront1show.png" id="popUp1-1">
+        <img src="./assets/hoodiewhitefront2show.png" id="popUp2-1">
+        <img src="./assets/hoodiewhitefront3show.png" id="popUp3-1">
+        <img src="./assets/hoodieblackfront1show.png" id="popUp4-1">
+        <img src="./assets/hoodieblackfront2show.png" id="popUp5-1">
+        <img src="./assets/hoodieblackfront3show.png" id="popUp6-1">
+
+        <div id="front">
+            <h1 id="image-h1">Vores Produkter</h1>
+        </div>
+        <div id="clothes">
+            <div id="tshirt">
+                <h2>T-shirts</h2>
+                <div class="parent">
+                    <div id="card1" onclick="show1()" onmouseover="over(this)" onmouseout="out(this)"></div>
+                    <div id="card2" onclick="show2()" onmouseover="over(this)" onmouseout="out(this)"></div>
+                    <div id="card3" onclick="show3()" onmouseover="over(this)" onmouseout="out(this)"></div>
+                    <div id="card4" onclick="show4()" onmouseover="over(this)" onmouseout="out(this)"></div>
+                    <div id="card5" onclick="show5()" onmouseover="over(this)" onmouseout="out(this)"></div>
+                    <div id="card6" onclick="show6()" onmouseover="over(this)" onmouseout="out(this)"></div>
+                </div>
+            </div>
+            <div id="hoodie">
+                <h2>Hoodies</h2>
+                <div class="parent">
+                    <div id="card1-1" onclick="show11()" onmouseover="over(this)" onmouseout="out(this)"></div>
+                    <div id="card2-1" onclick="show21()" onmouseover="over(this)" onmouseout="out(this)"></div>
+                    <div id="card3-1" onclick="show31()" onmouseover="over(this)" onmouseout="out(this)"></div>
+                    <div id="card4-1" onclick="show41()" onmouseover="over(this)" onmouseout="out(this)"></div>
+                    <div id="card5-1" onclick="show51()" onmouseover="over(this)" onmouseout="out(this)"></div>
+                    <div id="card6-1" onclick="show61()" onmouseover="over(this)" onmouseout="out(this)"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">+45 71 11 11 17</div>
+        <div class="lineBot"></div>
+        <div class="contact">Kontakt os</div>
+        <div class="lineBot"></div>
+        <div class="contact">upcycling@gmail.com</div>
+    </footer>
+    <script src="produkter.js"></script>
 </body>
 </html>
